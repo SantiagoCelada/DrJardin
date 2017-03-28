@@ -1,0 +1,80 @@
+<resources>
+    <string name="app_name">drjardin.es</string>
+    <string name="text"></string>
+    <string name="si">SI</string>
+    <string name="no">NO</string>
+    <string name="presenta">UDACITY</string>
+    <string name="start">START</string>
+    <string name="titulo_highscores">HIGH SCORES</string>
+    <string name="guardando_records">Guardando Records...</string>
+    <string name="anonimo">ANONIMO</string>
+    <string name="user">USUARIO:</string>
+    <string name="puntos">PUNTOS:</string>
+    <string name="valor_puntos">0</string>
+    <string name="confirmar">Confirmar</string>
+    <string name="continuar">CONTINUAR</string>
+    <string name="seguro">¿Está seguro?</string>
+    <string name="action_settings">Opciones:</string>
+    <string name="action_inicio">Inicio</string>
+    <string name="action_configuracion">Configuración</string>
+    <string name="action_historia">Historia</string>
+    <string name="action_registro">Registro</string>
+    <string name="action_responder">COMPROBAR</string>
+    <string name="label_registro">Registro drjardin.es</string>
+    <string name="label_agregar">Agregar Usuario</string>
+    <string name="label_actualizar">Actualizar Usuario</string>
+    <string name="label_eliminar">Eliminar Usuario</string>
+    <string name="label_login">Login</string>
+    <string name="label_configuracion">Configuración drjardin.es</string>
+    <string name="label_historia">Historia drjardin.es</string>
+    <string name="label_tienda">Tienda drjardin.es</string>
+    <string name="label_consulta">Consulta drjardin.es</string>
+    <string name="label_tutoriales">Tutoriales drjardin.es</string>
+    <string name="label_juego">Juego Score</string>
+    <string name="texto1">Cuidar la naturaleza es cuidar de uno mismo.
+        \nConsulta tus dudas al Dr Jardín.
+        \nAprende con nuestros tutoriales.
+        \nY para los más pequeños juegos para que aprendan jugando.\n
+    </string>
+    <string name="titulo1">Sobre Nosotros:</string>
+    <string name="titulo_maps">Ubicación:</string>
+    <string name="titulo_whatsup">Teléfono:</string>
+    <string name="titulo_internet">Web:</string>
+    <string name="titulo_tienda">Tienda\nOnline</string>
+    <string name="titulo_consulta">Consulta\nal Dr Jardín</string>
+    <string name="titulo_tutoriales">Guías y\nTutoriales</string>
+    <string name="titulo_compartir">Compartir\nAplicación</string>
+    <string name="titulo_juego">Juego\nEducativo</string>
+    <string name="titulo_registro">Registro\n</string>
+    <string name="titulo_redes_sociales">Síguenos en las redes sociales</string>
+    <string name="texto_maps">C/Mayor 1 - 30100 Murcia - Spain</string>
+    <string name="texto_whatsup">+0034 123 456 789</string>
+    <string name="texto_internet">http\\\\:www.drjardin.es</string>
+    <string name="footer">Diseño: \nSantiago Celada González\nMolina de Segura - 30500 - Murcia\n
+    </string>
+    <string name="obligatorios"> ** Campos Obligatorios</string>
+    <string name="nombre">**Nombre </string>
+    <string name="apellido1">Primer Apellido </string>
+    <string name="apellido2">Segundo Apellido </string>
+    <string name="usuario">**Usuario </string>
+    <string name="usu">USUARIO</string>
+    <string name="password">**Password </string>
+    <string name="pass">PASSWORD</string>
+    <string name="calle">Calle </string>
+    <string name="numero">Nº </string>
+    <string name="escalera">Esc </string>
+    <string name="piso">Piso </string>
+    <string name="puerta">Pta </string>
+    <string name="localidad">Localidad </string>
+    <string name="pais">País</string>
+    <string name="codigoPostal">Código Postal </string>
+    <string name="telefono">Teléfono </string>
+    <string name="email">**Email </string>
+    <string name="submit">Enviar</string>
+    <string name="login_titulo">Por favor rellene el formulario:</string>
+    <string name="login1_titulo">JUGADOR 1 ¿QUIERE HACER LOGIN?</string>
+    <string name="login2_titulo">JUGADOR 2 ¿QUIERE HACER LOGIN?</string>
+    <string name="login3_titulo">JUGADOR 3 ¿QUIERE HACER LOGIN?</string>
+    <string name="login4_titulo">JUGADOR 4 ¿QUIERE HACER LOGIN?</string>
+    <string name="espere_momento">ESPERE UN MOMENTO</string>
+</resources>

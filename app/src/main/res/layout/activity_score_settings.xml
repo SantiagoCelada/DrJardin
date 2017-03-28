@@ -1,0 +1,627 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="com.example.android.drjardin.ScoreSettings">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/view_num_jugadores"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/num_jugadores_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="@dimen/margin_8dp"
+                    android:text="¿NÚMERO DE JUGADORES?"
+                    android:textColor="@color/negro" />
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/num_jugadores_text"
+                    android:layout_centerHorizontal="true">
+
+                    <RadioButton
+                        android:id="@+id/radio_1_jugador"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1 JUGADOR"
+                        android:textColor="@color/negro" />
+
+                    <RadioButton
+                        android:id="@+id/radio_2_jugadores"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2 JUGADORES"
+                        android:textColor="@color/negro" />
+
+                    <RadioButton
+                        android:id="@+id/radio_3_jugadores"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3 JUGADORES"
+                        android:textColor="@color/negro" />
+
+                    <RadioButton
+                        android:id="@+id/radio_4_jugadores"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4 JUGADORES"
+                        android:textColor="@color/negro" />
+                </RadioGroup>
+            </RelativeLayout>
+
+            <!-- Login 1 -->
+
+            <RelativeLayout
+                android:id="@+id/view_login1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/margin_8dp"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <!-- RadioGroup 1 -->
+
+                    <LinearLayout
+                        android:id="@+id/radio_login_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/jugador1_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/margin_8dp"
+                            android:text="@string/login1_titulo"
+                            android:textColor="@color/negro" />
+
+                        <RadioGroup
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <RadioButton
+                                android:id="@+id/jugador1_si_login"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/si" />
+
+                            <RadioButton
+                                android:id="@+id/jugador1_no_login"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/no" />
+                        </RadioGroup>
+                    </LinearLayout>
+
+
+                    <!-- Usuario 1 -->
+
+                    <LinearLayout
+                        android:id="@+id/user1_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/usu"
+                            android:textColor="@color/textoPrincipal"
+                            android:textSize="@dimen/textoPeque" />
+
+                        <EditText
+                            android:id="@+id/usuario1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/usu"
+                            android:inputType="textPersonName"
+                            android:maxLength="50"
+                            android:textSize="@dimen/textoPeque" />
+
+
+                    </LinearLayout>
+
+                    <!-- Password  1 -->
+
+                    <LinearLayout
+                        android:id="@+id/password1_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/pass"
+                            android:textColor="@color/textoPrincipal"
+                            android:textSize="@dimen/textoPeque" />
+
+                        <EditText
+                            android:id="@+id/password1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/pass"
+                            android:inputType="textPassword"
+                            android:maxLength="50"
+                            android:textSize="@dimen/textoPeque" />
+                    </LinearLayout>
+
+                    <!-- Boton 1 login? -->
+
+                    <Button
+                        android:id="@+id/login_jugador1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_login" />
+
+                    <!-- Progress Bar 1 -->
+
+                    <LinearLayout
+                        android:id="@+id/progress1_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="@string/espere_momento" />
+
+                        <ProgressBar
+                            android:id="@+id/progress_login1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <!-- Login 2 -->
+
+            <RelativeLayout
+                android:id="@+id/view_login2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/margin_8dp"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <!-- RadioGroup 2 -->
+
+                    <LinearLayout
+                        android:id="@+id/radio_login_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/jugador2_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/margin_8dp"
+                            android:text="@string/login2_titulo"
+                            android:textColor="@color/negro" />
+
+                        <RadioGroup
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <RadioButton
+                                android:id="@+id/jugador2_si_login"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/si" />
+
+                            <RadioButton
+                                android:id="@+id/jugador2_no_login"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/no" />
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+
+                    <!-- Usuario 2 -->
+
+                    <LinearLayout
+                        android:id="@+id/user2_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/usu"
+                            android:textColor="@color/textoPrincipal"
+                            android:textSize="@dimen/textoPeque" />
+
+                        <EditText
+                            android:id="@+id/usuario2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/usu"
+                            android:inputType="textPersonName"
+                            android:maxLength="50"
+                            android:textSize="@dimen/textoPeque" />
+
+
+                    </LinearLayout>
+
+                    <!-- Password  2 -->
+
+                    <LinearLayout
+                        android:id="@+id/password2_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/pass"
+                            android:textColor="@color/textoPrincipal"
+                            android:textSize="@dimen/textoPeque" />
+
+                        <EditText
+                            android:id="@+id/password2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/pass"
+                            android:inputType="textPassword"
+                            android:maxLength="50"
+                            android:textSize="@dimen/textoPeque" />
+                    </LinearLayout>
+                    <!-- Boton 2 login? -->
+
+                    <Button
+                        android:id="@+id/login_jugador2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_login" />
+
+                    <!-- Progress Bar 2 -->
+
+                    <LinearLayout
+                        android:id="@+id/progress2_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="@string/espere_momento" />
+
+                        <ProgressBar
+                            android:id="@+id/progress_login2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <!-- Login 3 -->
+
+            <RelativeLayout
+                android:id="@+id/view_login3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/margin_8dp"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <!-- RadioGroup 3 -->
+
+                    <LinearLayout
+                        android:id="@+id/radio_login_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/jugador3_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/margin_8dp"
+                            android:text="@string/login3_titulo"
+                            android:textColor="@color/negro" />
+
+                        <RadioGroup
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <RadioButton
+                                android:id="@+id/jugador3_si_login"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/si" />
+
+                            <RadioButton
+                                android:id="@+id/jugador3_no_login"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/no" />
+                        </RadioGroup>
+                    </LinearLayout>
+
+
+                    <!-- Usuario 3 -->
+
+                    <LinearLayout
+                        android:id="@+id/user3_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/usu"
+                            android:textColor="@color/textoPrincipal"
+                            android:textSize="@dimen/textoPeque" />
+
+                        <EditText
+                            android:id="@+id/usuario3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/usu"
+                            android:inputType="textPersonName"
+                            android:maxLength="50"
+                            android:textSize="@dimen/textoPeque" />
+
+
+                    </LinearLayout>
+
+                    <!-- Password  3 -->
+
+                    <LinearLayout
+                        android:id="@+id/password3_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/pass"
+                            android:textColor="@color/textoPrincipal"
+                            android:textSize="@dimen/textoPeque" />
+
+                        <EditText
+                            android:id="@+id/password3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/pass"
+                            android:inputType="textPassword"
+                            android:maxLength="50"
+                            android:textSize="@dimen/textoPeque" />
+                    </LinearLayout>
+                    <!-- Boton 3 login? -->
+
+                    <Button
+                        android:id="@+id/login_jugador3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_login" />
+
+                    <!-- Progress Bar 3 -->
+
+                    <LinearLayout
+                        android:id="@+id/progress3_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="@string/espere_momento" />
+
+                        <ProgressBar
+                            android:id="@+id/progress_login3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal" />
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <!-- Login 4 -->
+
+            <RelativeLayout
+                android:id="@+id/view_login4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/margin_8dp"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <!-- RadioGroup 4 -->
+
+                    <LinearLayout
+                        android:id="@+id/radio_login_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/jugador4_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/margin_8dp"
+                            android:text="@string/login4_titulo"
+                            android:textColor="@color/negro" />
+
+                        <RadioGroup
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <RadioButton
+                                android:id="@+id/jugador4_si_login"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/si" />
+
+                            <RadioButton
+                                android:id="@+id/jugador4_no_login"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/no" />
+                        </RadioGroup>
+                    </LinearLayout>
+
+
+                    <!-- Usuario 4 -->
+
+                    <LinearLayout
+                        android:id="@+id/user4_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/usu"
+                            android:textColor="@color/textoPrincipal"
+                            android:textSize="@dimen/textoPeque" />
+
+                        <EditText
+                            android:id="@+id/usuario4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/usu"
+                            android:inputType="textPersonName"
+                            android:maxLength="50"
+                            android:textSize="@dimen/textoPeque" />
+
+
+                    </LinearLayout>
+
+                    <!-- Password  4 -->
+
+                    <LinearLayout
+                        android:id="@+id/password4_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/pass"
+                            android:textColor="@color/textoPrincipal"
+                            android:textSize="@dimen/textoPeque" />
+
+                        <EditText
+                            android:id="@+id/password4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/pass"
+                            android:inputType="textPassword"
+                            android:maxLength="50"
+                            android:textSize="@dimen/textoPeque" />
+                    </LinearLayout>
+                    <!-- Boton 4 login? -->
+
+                    <Button
+                        android:id="@+id/login_jugador4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_login" />
+
+                    <!-- Progress Bar 4 -->
+
+                    <LinearLayout
+                        android:id="@+id/progress4_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="@string/espere_momento" />
+
+                        <ProgressBar
+                            android:id="@+id/progress_login4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/settings_continuar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_16dp"
+                android:text="@string/continuar"
+                android:visibility="gone" />
+        </LinearLayout>
+    </ScrollView>
+</android.support.design.widget.CoordinatorLayout>

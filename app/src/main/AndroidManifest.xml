@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.android.drjardin">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:hardwareAccelerated="false"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".ScrollingActivity"
+            android:label="@string/text"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".RegistroActivity"
+            android:label="@string/label_registro"
+            android:parentActivityName=".ScrollingActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ScrollingActivity" />
+        </activity>
+        <activity
+            android:name=".HistoriaActivity"
+            android:label="@string/label_historia"
+            android:parentActivityName=".ScrollingActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ScrollingActivity" />
+        </activity>
+        <activity
+            android:name=".ConfiguracionActivity"
+            android:label="@string/label_configuracion"
+            android:parentActivityName=".ScrollingActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ScrollingActivity" />
+        </activity>
+        <activity
+            android:name=".TiendaActivity"
+            android:label="@string/label_tienda"
+            android:parentActivityName=".ScrollingActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ScrollingActivity" />
+        </activity>
+        <activity
+            android:name=".ConsultaActivity"
+            android:label="@string/label_consulta"
+            android:parentActivityName=".ScrollingActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ScrollingActivity" />
+        </activity>
+        <activity
+            android:name=".TutorialesActivity"
+            android:label="@string/label_tutoriales"
+            android:parentActivityName=".ScrollingActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ScrollingActivity" />
+        </activity>
+        <activity
+            android:name=".ScoreActivity"
+            android:label="@string/label_juego"
+            android:parentActivityName=".ScrollingActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ScrollingActivity" />
+        </activity>
+        <activity
+            android:name=".AgregarActivity"
+            android:label="@string/label_agregar"
+            android:parentActivityName=".RegistroActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".RegistroActivity" />
+        </activity>
+        <activity
+            android:name=".ActualizarActivity"
+            android:label="@string/label_actualizar"
+            android:parentActivityName=".RegistroActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".RegistroActivity" />
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/label_login"
+            android:parentActivityName=".RegistroActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".RegistroActivity" />
+        </activity>
+        <activity
+            android:name=".EliminarActivity"
+            android:label="@string/label_eliminar"
+            android:parentActivityName=".RegistroActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".RegistroActivity" />
+        </activity>
+        <activity
+            android:name=".MensajeActivity"
+            android:label="@string/app_name"
+            android:parentActivityName=".RegistroActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".RegistroActivity" />
+        </activity>
+        <activity
+            android:name=".NavegadorActivity"
+            android:label="@string/app_name"
+            android:parentActivityName=".ScrollingActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".RegistroActivity" />
+        </activity>
+        <activity
+            android:name=".MenuScoreActivity"
+            android:label="@string/label_juego"
+            android:parentActivityName=".ScoreActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ScoreActivity" />
+        </activity>
+        <activity
+            android:name=".JuegoActivity"
+            android:label="@string/text"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".ScoreSettings"
+            android:label="@string/label_juego"
+            android:parentActivityName=".MenuScoreActivity"
+            android:theme="@style/AppTheme"
+            >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MenuScoreActivity" />
+        </activity>
+        <activity android:name=".HighScores"
+            android:label="@string/label_juego"
+            android:parentActivityName=".MenuScoreActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MenuScoreActivity" />
+        </activity>
+    </application>
+
+</manifest>

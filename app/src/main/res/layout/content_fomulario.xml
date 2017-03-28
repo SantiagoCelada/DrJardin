@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!-- Formulario -->
+
+    <!-- Campos Obligatorios -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_16dp"
+            android:text="@string/obligatorios"
+            android:textColor="@color/negro"
+            android:textSize="@dimen/textoMediano" />
+    </LinearLayout>
+
+    <!-- Nombre -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_16dp"
+            android:text="@string/nombre"
+            android:textColor="@color/textoPrincipal"
+            android:textSize="@dimen/textoPeque" />
+
+        <EditText
+            android:id="@+id/nombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/nombre"
+            android:inputType="textPersonName"
+            android:maxLength="50"
+            android:textSize="@dimen/textoPeque" />
+    </LinearLayout>
+
+    <!-- Primer Apellido -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_16dp"
+            android:text="@string/apellido1"
+            android:textColor="@color/textoPrincipal"
+            android:textSize="@dimen/textoPeque" />
+
+        <EditText
+            android:id="@+id/apellido1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/apellido1"
+            android:inputType="textPersonName"
+            android:maxLength="50"
+            android:textSize="@dimen/textoPeque" />
+    </LinearLayout>
+
+    <!-- Segundo Apellido -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_16dp"
+            android:text="@string/apellido2"
+            android:textColor="@color/textoPrincipal"
+            android:textSize="@dimen/textoPeque" />
+
+        <EditText
+            android:id="@+id/apellido2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/apellido2"
+            android:inputType="textPersonName"
+            android:maxLength="50"
+            android:textSize="@dimen/textoPeque" />
+    </LinearLayout>
+
+    <!-- Usuario -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/texto_usuario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_16dp"
+            android:text="@string/usuario"
+            android:textColor="@color/textoPrincipal"
+            android:textSize="@dimen/textoPeque" />
+
+        <EditText
+            android:id="@+id/usuario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/usuario"
+            android:inputType="textPersonName"
+            android:maxLength="50"
+            android:textSize="@dimen/textoPeque" />
+    </LinearLayout>
+
+    <!-- Password -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_16dp"
+            android:text="@string/password"
+            android:textColor="@color/textoPrincipal"
+            android:textSize="@dimen/textoPeque" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:maxLength="50"
+            android:textSize="@dimen/textoPeque" />
+    </LinearLayout>
+
+    <!-- Calle y Número -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_16dp"
+            android:text="@string/calle"
+            android:textColor="@color/textoPrincipal"
+            android:textSize="@dimen/textoPeque" />
+
+        <EditText
+            android:id="@+id/calle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/calle"
+            android:inputType="text"
+            android:maxLength="50"
+            android:textSize="@dimen/textoPeque" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_16dp"
+            android:text="@string/numero"
+            android:textColor="@color/textoPrincipal"
+            android:textSize="@dimen/textoPeque" />
+
+        <EditText
+            android:id="@+id/numero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/numero"
+            android:inputType="number"
+            android:maxLength="4"
+            android:textSize="@dimen/textoPeque" />
+    </LinearLayout>
+
+    <!-- Escalera Piso y Puerta -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_16dp"
+            android:text="@string/escalera"
+            android:textColor="@color/textoPrincipal"
+            android:textSize="@dimen/textoPeque" />
+
+        <EditText
+            android:id="@+id/escalera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/escalera"
+            android:inputType="text"
+            android:maxLength="3"
+            android:textSize="@dimen/textoPeque" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_16dp"
+            android:text="@string/piso"
+            android:textColor="@color/textoPrincipal"
+            android:textSize="@dimen/textoPeque" />
+
+        <EditText
+            android:id="@+id/piso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/piso"
+            android:inputType="number"
+            android:maxLength="3"
+            android:textSize="@dimen/textoPeque" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_16dp"
+            android:text="@string/puerta"
+            android:textColor="@color/textoPrincipal"
+            android:textSize="@dimen/textoPeque" />
+
+        <EditText
+            android:id="@+id/puerta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/puerta"
+            android:inputType="text"
+            android:maxLength="10"
+            android:textSize="@dimen/textoPeque" />
+    </LinearLayout>
+
+    <!-- Localidad -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_16dp"
+            android:text="@string/localidad"
+            android:textColor="@color/textoPrincipal"
+            android:textSize="@dimen/textoPeque" />
+
+        <EditText
+            android:id="@+id/localidad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/localidad"
+            android:inputType="text"
+            android:maxLength="50"
+            android:textSize="@dimen/textoPeque" />
+    </LinearLayout>
+
+    <!-- Pais -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_16dp"
+            android:text="@string/pais"
+            android:textColor="@color/textoPrincipal"
+            android:textSize="@dimen/textoPeque" />
+
+        <EditText
+            android:id="@+id/pais"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/pais"
+            android:inputType="text"
+            android:maxLength="50"
+            android:textSize="@dimen/textoPeque" />
+    </LinearLayout>
+
+    <!-- Código Postal -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_16dp"
+            android:text="@string/codigoPostal"
+            android:textColor="@color/textoPrincipal"
+            android:textSize="@dimen/textoPeque" />
+
+        <EditText
+            android:id="@+id/codigoPostal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/codigoPostal"
+            android:inputType="number"
+            android:maxLength="5"
+            android:textSize="@dimen/textoPeque" />
+    </LinearLayout>
+
+    <!-- Número de Teléfono -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_16dp"
+            android:text="@string/telefono"
+            android:textColor="@color/textoPrincipal"
+            android:textSize="@dimen/textoPeque" />
+
+        <EditText
+            android:id="@+id/telefono"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/telefono"
+            android:inputType="phone"
+            android:maxLength="9"
+            android:textSize="@dimen/textoPeque" />
+    </LinearLayout>
+
+    <!-- Correo Electrónico -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_16dp"
+            android:text="@string/email"
+            android:textColor="@color/textoPrincipal"
+            android:textSize="@dimen/textoPeque" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:maxLength="50"
+            android:textSize="@dimen/textoPeque" />
+    </LinearLayout>
+
+    <!-- Botón enviar -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/cielo_image"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/fondo2" />
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_16dp"
+            android:text="@string/submit" />
+    </RelativeLayout>
+
+</LinearLayout>
